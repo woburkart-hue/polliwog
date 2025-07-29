@@ -1,0 +1,17 @@
+body { margin:0; font-family:sans-serif; color:#333; } /* kein oberer Rand! */
+
+.hero-small {
+  height: 20vh;
+  background-color: #A3CC4C; /* = Hintergrundfarbe deines Bildes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-small img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
