@@ -15,3 +15,9 @@ body { margin:0; font-family:sans-serif; color:#333; } /* kein oberer Rand! */
   object-fit: contain;
   display: block;
 }
+
+@media (max-width: 600px) {
+  body {
+    text-align: left;
+  }
+}
