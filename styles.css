@@ -49,22 +49,27 @@ body {
   body {
     text-align: left;
   }
+  
+.slideshow-container {
+  position: relative;
+  width: 100%; /* 100% der Breite des Elternelements */
+  max-width: 800px; /* Optional – maximale Breite auf großen Bildschirmen */
+  aspect-ratio: 16 / 9; /* Seitenverhältnis (optional, für gleichmäßige Höhe) */
+  margin: auto;
+  overflow: hidden;
+}
 
-  .slideshow-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* beliebige Breite */
-    height: auto;
-    overflow: hidden;
-  }
-  .slide {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  .slide.active {
-    opacity: 1;
-    z-index: 1;
-  }
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* skaliert Bilder proportional, füllt den Container */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
 }
