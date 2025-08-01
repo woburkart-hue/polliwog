@@ -46,6 +46,31 @@ body { margin:0; font-family:sans-serif; color:#333; } /* kein oberer Rand! */
   z-index: 1;
 }
 
+/* Pfeile */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  margin-top: -20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 body {
   text-align: justify;   /* Blocksatz */
   font-family: sans-serif; /* optional, für bessere Lesbarkeit */
