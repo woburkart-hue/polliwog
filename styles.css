@@ -16,6 +16,13 @@ body { margin:0; font-family:sans-serif; color:#333; } /* kein oberer Rand! */
   display: block;
 }
 
+.text-container {
+  max-width: 800px;     /* maximale Breite */
+  margin: 0 auto;        /* horizontal zentriert */
+  padding: 20px;         /* etwas Innenabstand */
+  text-align: center;    /* optional: zentrierter Text */
+}
+
 body {
   text-align: justify;   /* Blocksatz */
   font-family: sans-serif; /* optional, für bessere Lesbarkeit */
