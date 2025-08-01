@@ -27,4 +27,22 @@ body {
   body {
     text-align: left;
   }
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* beliebige Breite */
+    height: auto;
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
 }
