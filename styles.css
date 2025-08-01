@@ -25,7 +25,7 @@ body { margin:0; font-family:sans-serif; color:#333; } /* kein oberer Rand! */
 
 .slideshow-container {
   position: relative;
-  width: 50%; /* 100% der Breite des Elternelements */
+  width: 100%; /* 100% der Breite des Elternelements */
   max-width: 800px; /* Optional – maximale Breite auf großen Bildschirmen */
   aspect-ratio: 16 / 9; /* Seitenverhältnis (optional, für gleichmäßige Höhe) */
   margin: auto;
