@@ -6,6 +6,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlides() {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+    });
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add("active");
+  }
+
+  // Zeige die erste Folie beim Laden
+  slides[slideIndex].classList.add("active");
+
+  // Wechsle alle 5 Sekunden
+  setInterval(showSlides, 5000);
+</script>
+    
 <body>
     <header class="hero-small">
       <img src="bilder/polliwog_flyer.jpg">
