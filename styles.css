@@ -80,3 +80,17 @@ body {
   z-index: 1;
 }
 }
+
+.site-footer {
+  background-color: #A3CC4C;     /* dunkler Hintergrund */
+  color: black;               /* Textfarbe */
+  width: 100%;                /* volle Breite */
+  padding: 20px 0;            /* vertikaler Abstand */
+}
+
+.footer-content {
+  max-width: 1000px;          /* begrenze Textbreite */
+  margin: 0 auto;             /* zentriere horizontal */
+  padding: 0 20px;            /* etwas Rand links/rechts für kleine Bildschirme */
+  text-align: center;
+}
